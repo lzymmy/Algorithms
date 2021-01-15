@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="908.0" prefWidth="2000.0" style="-fx-background-color: #9ca570;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.MapSearch">
+   <children>
+      <Pane fx:id="pane_map" layoutX="6.0" layoutY="6.0" onMouseClicked="#select_location" prefHeight="896.0" prefWidth="1373.0" style="-fx-background-color: #a8cac5;" />
+      <Label layoutX="1378.0" layoutY="61.0" />
+      <Label layoutX="1393.0" layoutY="24.0" text="增加线路" />
+      <Label layoutX="1393.0" layoutY="108.0" text="终点" />
+      <Label layoutX="1393.0" layoutY="195.0" text="删除地点" />
+      <Label layoutX="1393.0" layoutY="238.0" text="地名" />
+      <Label layoutX="1393.0" layoutY="61.0" text="起点" />
+      <TextField fx:id="text_addPath_start" layoutX="1453.0" layoutY="56.0" />
+      <TextField fx:id="text_addPath_end" layoutX="1453.0" layoutY="103.0" />
+      <TextField fx:id="text_delLocation" layoutX="1453.0" layoutY="233.0" />
+      <Label layoutX="1393.0" layoutY="326.0" text="删除路线" />
+      <Label layoutX="1539.0" layoutY="24.0" text="步行" />
+      <Label layoutX="1393.0" layoutY="437.0" text="终点" />
+      <TextField fx:id="text_delPath_start" layoutX="1453.0" layoutY="371.0" />
+      <TextField fx:id="text_delPath_end" layoutX="1453.0" layoutY="432.0" />
+      <Button fx:id="bt_add_path" layoutX="1514.0" layoutY="151.0" mnemonicParsing="false" onAction="#addPath" text="确认增加" />
+      <Button fx:id="bt_del_location" layoutX="1514.0" layoutY="279.0" mnemonicParsing="false" onAction="#delLocation" text="确认删除" />
+      <Button fx:id="bt_del_path" layoutX="1514.0" layoutY="484.0" mnemonicParsing="false" onAction="#delPath" text="确认删除" />
+      <Label layoutX="1393.0" layoutY="541.0" text="自定义地点" />
+      <Label layoutX="1393.0" layoutY="586.0" text="地名" />
+      <TextField fx:id="text_3" layoutX="1453.0" layoutY="581.0" />
+      <Label layoutX="1393.0" layoutY="650.0" text="导航" />
+      <Label layoutX="1393.0" layoutY="692.0" text="起点" />
+      <TextField fx:id="text_navigation_start" layoutX="1453.0" layoutY="687.0" />
+      <TextField fx:id="text_navigation_end" layoutX="1453.0" layoutY="739.0" />
+      <Label layoutX="1393.0" layoutY="744.0" text="终点" />
+      <Button fx:id="bt_navigation_bus" layoutX="1743.0" layoutY="801.0" mnemonicParsing="false" onAction="#navigation_bus" text="公交" />
+      <Button fx:id="bt_navigation_walk" layoutX="1530.0" layoutY="801.0" mnemonicParsing="false" onAction="#navigation_walk" text="步行" />
+      <Button fx:id="bt_reset" layoutX="1503.0" layoutY="844.0" mnemonicParsing="false" onAction="#reset" prefHeight="30.0" prefWidth="104.0" text="重置" />
+      <Label layoutX="1672.0" layoutY="650.0" text="路线" />
+      <TextArea fx:id="text_path" layoutX="1672.0" layoutY="687.0" prefHeight="89.0" prefWidth="200.0" />
+      <Button fx:id="bt_init" layoutX="1725.0" layoutY="844.0" mnemonicParsing="false" onAction="#init_map" text="初始化地图" />
+      <TextField fx:id="text_addPath_busStart" layoutX="1671.0" layoutY="56.0" />
+      <TextField fx:id="text_addPath_busEnd" layoutX="1671.0" layoutY="103.0" />
+      <TextField fx:id="text_delLocation_bus" layoutX="1671.0" layoutY="233.0" />
+      <TextField fx:id="text_delPath_busStart" layoutX="1671.0" layoutY="371.0" />
+      <TextField fx:id="text_delPath_busEnd" layoutX="1671.0" layoutY="432.0" />
+      <TextField fx:id="text_add_busLocation" layoutX="1671.0" layoutY="581.0" />
+      <Label layoutX="1753.0" layoutY="24.0" text="公交" />
+      <Button fx:id="bt_addPath_busStation" layoutX="1734.0" layoutY="151.0" mnemonicParsing="false" onAction="#addPath_busStation" text="确认增加" />
+      <Button fx:id="bt_delLocation_busStation" layoutX="1737.0" layoutY="279.0" mnemonicParsing="false" onAction="#delLocation_busStation" text="确认删除" />
+      <Button fx:id="bt_delPath_busStation" layoutX="1738.0" layoutY="484.0" mnemonicParsing="false" onAction="#delPath_busStation" text="确认删除" />
+      <Label layoutX="1393.0" layoutY="376.0" text="起点" />
+   </children>
+</Pane>
